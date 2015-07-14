@@ -28,7 +28,7 @@ namespace AmazonSQS_Sample
     {
         public static void Main(string[] args)
         {
-            IAmazonSQS sqs = AWSClientFactory.CreateAmazonSQSClient(RegionEndpoint.USWest2);
+            IAmazonSQS sqs = new AmazonSQSClient(RegionEndpoint.USWest2);
 
             try
             {
