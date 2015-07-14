@@ -43,7 +43,7 @@ namespace AmazonSesSample
         {
             if (CheckRequiredFields())
             {
-                using (var client = AWSClientFactory.CreateAmazonSimpleEmailServiceClient(RegionEndpoint.USEast1))
+                using (var client = new AmazonSimpleEmailServiceClient(RegionEndpoint.USEast1))
                 {
                     var sendRequest = new SendEmailRequest
                                         {
