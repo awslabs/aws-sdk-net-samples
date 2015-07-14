@@ -31,7 +31,7 @@ namespace AmazonDynamoDB_Sample
         public static void CreateSampleTables()
         {
             Console.WriteLine("Getting list of tables");
-            List<string> currentTables = client.ListTables().ListTablesResult.TableNames;
+            List<string> currentTables = client.ListTables().TableNames;
             Console.WriteLine("Number of tables: " + currentTables.Count);
 
             bool tablesAdded = false;
@@ -166,7 +166,7 @@ namespace AmazonDynamoDB_Sample
             while(true)
             {
                 Console.WriteLine("Getting list of tables");
-                var currentTables = client.ListTables().ListTablesResult.TableNames;
+                var currentTables = client.ListTables().TableNames;
                 if (currentTables.Intersect(SampleTables).Count() == 0)
                     break;
 

@@ -21,7 +21,6 @@ using System.Collections.Generic;
 using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
-using Amazon.SecurityToken;
 using Amazon.Runtime;
 
 namespace AmazonDynamoDB_Sample
