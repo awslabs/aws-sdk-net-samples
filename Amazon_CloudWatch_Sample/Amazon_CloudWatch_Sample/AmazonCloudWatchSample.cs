@@ -35,7 +35,7 @@ namespace GettingStartedGuide
             PerformanceCounter peakPageFile    = new PerformanceCounter("Paging File", "% Usage Peak", "_Total");
 
 
-            IAmazonCloudWatch client = Amazon.AWSClientFactory.CreateAmazonCloudWatchClient(RegionEndpoint.USWest2);
+            IAmazonCloudWatch client = new AmazonCloudWatchClient(RegionEndpoint.USWest2);
 
             // Once a minute, send paging file usage statistics to CloudWatch
             for (; ; )
