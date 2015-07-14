@@ -41,7 +41,7 @@ namespace GettingStartedGuide
         {
             if (checkRequiredFields())
             {
-                using (client = Amazon.AWSClientFactory.CreateAmazonS3Client(RegionEndpoint.USWest2))
+                using (client = new AmazonS3Client(RegionEndpoint.USWest2))
                 {
                     Console.WriteLine("Listing buckets");
                     ListingBuckets();
