@@ -1,0 +1,17 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3FileSystem_Sample", "S3FileSystem_Sample\S3FileSystem_Sample.csproj", "{D7100FF3-40D9-4B4D-8C45-96643B7B8156}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7100FF3-40D9-4B4D-8C45-96643B7B8156}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D7100FF3-40D9-4B4D-8C45-96643B7B8156}.Release|Any CPU.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
