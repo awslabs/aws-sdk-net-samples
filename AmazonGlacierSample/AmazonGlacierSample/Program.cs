@@ -25,7 +25,7 @@ using System.Collections.Specialized;
 using System.Configuration;
 using Amazon.Runtime;
 
-namespace $safeprojectname$
+namespace AmazonGlacierSample
 {
     class Program
     {
