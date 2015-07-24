@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button
+        android:id="@+id/InitializeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Initialize" />
+    <Button
+        android:id="@+id/TakePictureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TakePicture" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="300.0dp"
+        android:id="@+id/Picture"
+        android:adjustViewBounds="true" />
+    <Button
+        android:id="@+id/UploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Upload" />
+    <Button
+        android:id="@+id/ViewMyUploads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ViewUploads" />
+</LinearLayout>

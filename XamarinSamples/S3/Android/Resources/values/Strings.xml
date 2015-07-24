@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Initialize">Initialize</string>
+  <string name="TakePicture">Take Picture</string>
+  <string name="Upload">Upload Picture</string>
+  <string name="ViewUploads">View Uploads</string>
+  <string name="ApplicationName">S3 - Sample</string>
+</resources>

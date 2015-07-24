@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MobileAnalyticsSample_Android.MobileAnalyticsSample_Android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk />
+	<application android:label="MobileAnalyticsSample-Android" android:icon="@drawable/Icon"></application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>
