@@ -1,0 +1,8 @@
+﻿<Application x:Class="AmazonS3TransferUtility_Sample.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="S3TransferWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
