@@ -26,6 +26,10 @@ namespace S3.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::PCLCrypto.Resource.String.ApplicationName = global::S3.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::S3.Droid.Resource.String.Hello;
+			global::PCLStorage.Resource.String.ApplicationName = global::S3.Droid.Resource.String.ApplicationName;
+			global::PCLStorage.Resource.String.Hello = global::S3.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -110,20 +114,23 @@ namespace S3.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040004
-			public const int ApplicationName = 2130968580;
+			// aapt resource value: 0x7f040001
+			public const int ApplicationName = 2130968577;
 			
 			// aapt resource value: 0x7f040000
-			public const int Initialize = 2130968576;
-			
-			// aapt resource value: 0x7f040001
-			public const int TakePicture = 2130968577;
+			public const int Hello = 2130968576;
 			
 			// aapt resource value: 0x7f040002
-			public const int Upload = 2130968578;
+			public const int Initialize = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int ViewUploads = 2130968579;
+			public const int TakePicture = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int Upload = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int ViewUploads = 2130968581;
 			
 			static String()
 			{

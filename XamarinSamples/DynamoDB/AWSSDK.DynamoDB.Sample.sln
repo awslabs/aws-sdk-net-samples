@@ -100,13 +100,15 @@ Global
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.AppStore|Mixed Platforms.ActiveCfg = AppStore|iPhone
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.AppStore|Mixed Platforms.Build.0 = AppStore|iPhone
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|Any CPU.Build.0 = Debug|iPhone
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|iPhone.Build.0 = Debug|iPhone
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhone
-		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|Mixed Platforms.Build.0 = Debug|iPhone
+		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhoneSimulator
+		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Debug|Mixed Platforms.Build.0 = Debug|iPhoneSimulator
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Release|Any CPU.Build.0 = Release|iPhone
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Release|iPhone.ActiveCfg = Release|iPhone
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Release|iPhone.Build.0 = Release|iPhone
 		{1E542C5D-90EB-4C87-ACA1-BA7AF12B0108}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator

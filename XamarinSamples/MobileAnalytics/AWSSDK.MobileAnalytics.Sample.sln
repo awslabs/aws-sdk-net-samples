@@ -40,15 +40,15 @@ Global
 		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Debug|iPhone.Build.0 = Debug|iPhone
 		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhone
-		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Debug|Mixed Platforms.Build.0 = Debug|iPhone
+		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhoneSimulator
+		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Debug|Mixed Platforms.Build.0 = Debug|iPhoneSimulator
 		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|Any CPU.ActiveCfg = Release|iPhone
 		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|iPhone.ActiveCfg = Release|iPhone
 		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|iPhone.Build.0 = Release|iPhone
 		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|Mixed Platforms.ActiveCfg = Release|iPhone
-		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|Mixed Platforms.Build.0 = Release|iPhone
+		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|Mixed Platforms.ActiveCfg = Release|iPhoneSimulator
+		{E7C618DF-06DE-49D8-8CCB-2D5F6B43BF03}.Release|Mixed Platforms.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

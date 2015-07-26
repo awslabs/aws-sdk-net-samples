@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "S3", "S3", "{95DF2193-6863-4BBD-B115-37A0CA35D50C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidSample", "Android\AndroidSample.csproj", "{CCA953D8-8592-443E-B37F-2E6238574B41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidSample", "S3\Android\AndroidSample.csproj", "{CCA953D8-8592-443E-B37F-2E6238574B41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +54,7 @@ Global
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CCA953D8-8592-443E-B37F-2E6238574B41}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Release|Any CPU.Build.0 = Release|Any CPU
@@ -62,6 +63,7 @@ Global
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CCA953D8-8592-443E-B37F-2E6238574B41}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{CCA953D8-8592-443E-B37F-2E6238574B41}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution

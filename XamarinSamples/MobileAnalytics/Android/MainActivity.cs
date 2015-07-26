@@ -24,7 +24,7 @@ namespace MobileAnalyticsSample_Android
         private const string APP_ID = "YourAppID";
         private string COGNITO_POOL_ID = "YourPoolID";
         private RegionEndpoint COGNITO_REGION = RegionEndpoint.USEast1;
-        
+
         private static MobileAnalyticsManager _manager = null;
 
 
@@ -71,9 +71,9 @@ namespace MobileAnalyticsSample_Android
 
 
             // customize your Mobile Analytics Manager Config
-			MobileAnalyticsManagerConfig config = new MobileAnalyticsManagerConfig();
-			config.AllowUseDataNetwork = true;
-            
+            MobileAnalyticsManagerConfig config = new MobileAnalyticsManagerConfig();
+            config.AllowUseDataNetwork = true;
+
             _manager = MobileAnalyticsManager.GetOrCreateInstance(APP_ID, new CognitoAWSCredentials(COGNITO_POOL_ID, COGNITO_REGION), RegionEndpoint.USEast1, config);
         }
 

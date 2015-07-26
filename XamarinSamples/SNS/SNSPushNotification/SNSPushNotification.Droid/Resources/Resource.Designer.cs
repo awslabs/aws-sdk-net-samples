@@ -30,6 +30,8 @@ namespace SNSPushNotification.Droid
 			global::PCLCrypto.Resource.String.Hello = global::SNSPushNotification.Droid.Resource.String.Hello;
 			global::PCLStorage.Resource.String.ApplicationName = global::SNSPushNotification.Droid.Resource.String.ApplicationName;
 			global::PCLStorage.Resource.String.Hello = global::SNSPushNotification.Droid.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::SNSPushNotification.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::SNSPushNotification.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
