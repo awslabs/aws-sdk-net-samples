@@ -33,7 +33,7 @@ namespace SNSPushNotification.iOS
         public override void RegisteredForRemoteNotifications(UIApplication application, NSData token)
         {
             var deviceToken = token.Description.Replace("<", "").Replace(">", "").Replace(" ", "");
-            if(!string.IsNullOrEmpty(deviceToken))
+            if (!string.IsNullOrEmpty(deviceToken))
             {
                 SNSUtils.RegisterDevice(SNSUtils.Platform.IOS, deviceToken);
             }
@@ -41,7 +41,7 @@ namespace SNSPushNotification.iOS
 
         public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
         {
-            //base.FailedToRegisterForRemoteNotifications(application, error);
+            Console.WriteLine(@"Failed to register for remote notification {0}", error.Description);
         }
 
     }
