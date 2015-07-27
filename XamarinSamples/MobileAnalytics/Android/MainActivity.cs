@@ -5,15 +5,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Amazon.MobileAnalytics.MobileAnalyticsManager;
-using Amazon.Runtime;
+
 using Amazon;
-using Amazon.MobileAnalytics.Model;
-using System.Net;
-using System.Collections.Generic;
-using Amazon.MobileAnalytics;
-using System.Collections;
-using ThirdParty.Json.LitJson;
+using Amazon.MobileAnalytics.MobileAnalyticsManager;
 using Amazon.CognitoIdentity;
 
 namespace MobileAnalyticsSample_Android
@@ -62,7 +56,7 @@ namespace MobileAnalyticsSample_Android
                 monetizationEvent.ItemPrice = 2.00;
                 monetizationEvent.ProductId = "ProductId123";
                 monetizationEvent.ItemPriceFormatted = "$2.00";
-                monetizationEvent.Store = "Apple";
+                monetizationEvent.Store = "Amazon";
                 monetizationEvent.TransactionId = "TransactionId123";
                 monetizationEvent.Currency = "USD";
 
