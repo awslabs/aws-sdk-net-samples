@@ -15,3 +15,5 @@
 **/NuGet.exe
 **/buildlogs/
 **/packages
+
+**/project.lock.json
