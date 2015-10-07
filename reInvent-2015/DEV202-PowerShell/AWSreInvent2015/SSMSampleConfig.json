@@ -1,0 +1,83 @@
+{
+	"schemaVersion": "1.0",
+	"description": "Auto-constructed configuration for reinvent2015",
+	"runtimeConfig": {
+		"aws:domainJoin": {
+			"properties": {
+				"dnsIpAddresses": ["10.0.1.153", "10.0.2.213"],
+				"directoryName": "underdesk.corp.net",
+				"directoryId": "d-926739b722",
+				"directoryOU": "OU=underdesk,DC=corp,DC=net"
+			}
+		},
+		"aws:cloudWatch": {
+			"properties": {
+				"EngineConfiguration": {
+					"Flows": {
+						"Flows": ["(systemeventlogid,appeventlogid),cloudwatchlogsid",
+						"memorycounterid,cloudwatchid"]
+					},
+					"Components": [{
+						"FullName": "AWS.EC2.Windows.CloudWatch.EventLog.EventLogInputComponent,AWS.EC2.Windows.CloudWatch",
+						"Parameters": {
+							"LogName": "System",
+							"Levels": 7
+						},
+						"Id": "systemeventlogid"
+					},
+					{
+						"FullName": "AWS.EC2.Windows.CloudWatch.EventLog.EventLogInputComponent,AWS.EC2.Windows.CloudWatch",
+						"Parameters": {
+							"LogName": "Application",
+							"Levels": 7
+						},
+						"Id": "appeventlogid"
+					},
+					{
+						"FullName": "AWS.EC2.Windows.CloudWatch.EventLog.EventLogInputComponent,AWS.EC2.Windows.CloudWatch",
+						"Parameters": {
+							"LogName": "Microsoft-Windows-WinINet/Analytic",
+							"Levels": 7
+						},
+						"Id": "etwlogid"
+					},
+					{
+						"FullName": "AWS.EC2.Windows.CloudWatch.PerformanceCounterComponent.PerformanceCounterInputComponent,AWS.EC2.Windows.CloudWatch",
+						"Parameters": {
+							"CounterName": "Available MBytes",
+							"MetricName": "AvailableMemory",
+							"InstanceName": "",
+							"DimensionValue": "",
+							"Unit": "Megabytes",
+							"CategoryName": "Memory",
+							"DimensionName": ""
+						},
+						"Id": "memorycounterid"
+					},
+					{
+						"FullName": "AWS.EC2.Windows.CloudWatch.CloudWatchLogsOutput,AWS.EC2.Windows.CloudWatch",
+						"Parameters": {
+							"Region": "us-west-2",
+							"SecretKey": "",
+							"AccessKey": "",
+							"LogStream": "{hostname}",
+							"LogGroup": "reinvent2015"
+						},
+						"Id": "cloudwatchlogsid"
+					},
+					{
+						"FullName": "AWS.EC2.Windows.CloudWatch.CloudWatch.CloudWatchOutputComponent,AWS.EC2.Windows.CloudWatch",
+						"Parameters": {
+							"Region": "us-west-2",
+							"SecretKey": "",
+							"AccessKey": "",
+							"NameSpace": "reinvent2015/default"
+						},
+						"Id": "cloudwatchid"
+					}],
+					"PollInterval": "00:00:15"
+				}
+			}
+		}
+	}
+}
