@@ -4,10 +4,10 @@
 	"runtimeConfig": {
 		"aws:domainJoin": {
 			"properties": {
-				"dnsIpAddresses": ["10.0.1.153", "10.0.2.213"],
-				"directoryName": "underdesk.corp.net",
-				"directoryId": "d-926739b722",
-				"directoryOU": "OU=underdesk,DC=corp,DC=net"
+				"dnsIpAddresses": ["198.51.100.1","198.51.100.2"],
+				"directoryName": "example.com",
+				"directoryId": "d-1234567890",
+				"directoryOU": "OU=test,DC=example,DC=com"
 			}
 		},
 		"aws:cloudWatch": {
