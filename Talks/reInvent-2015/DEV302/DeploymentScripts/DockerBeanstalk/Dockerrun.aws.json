@@ -5,7 +5,7 @@
 			"name": "pollfeed",
 			"image": "awsdotnet/pollfeed:beta-7a",
 			"essential": true,
-			"memory": 512,
+			"memory": 2048,
 			"environment": [
 				{
 					"name": "ASPNET_ENV",
@@ -23,7 +23,7 @@
 			"name": "pollvoter",
 			"image": "awsdotnet/pollvoter:beta-7a",
 			"essential": true,
-			"memory": 256,
+			"memory": 1024,
 			"environment": [
 				{
 					"name": "ASPNET_ENV",
@@ -41,7 +41,7 @@
 			"name": "pollwebfrontend",
 			"image": "awsdotnet/pollwebfrontend:beta-7a",
 			"essential": true,
-			"memory": 512,
+			"memory": 3072,
 			"environment": [
 				{
 					"name": "ASPNET_ENV",
@@ -76,7 +76,7 @@
 			"name": "pollwriter",
 			"image": "awsdotnet/pollwriter:beta-7a",
 			"essential": true,
-			"memory": 128,
+			"memory": 512,
 			"environment": [
 				{
 					"name": "ASPNET_ENV",

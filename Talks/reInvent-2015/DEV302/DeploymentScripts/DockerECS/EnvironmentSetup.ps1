@@ -104,7 +104,7 @@ function _setupTaskDefinition([string]$clusterName,[string]$loadBalancerName,[st
 
 function ProcessInput([string]$instanceType,[string]$keyPair)
 {
-<#
+
     $clusterName = (New-ECSCluster -ClusterName "pollster").ClusterName
     $stackId = _LaunchCloudFormationStack $instanceType $keyPair $clusterName
     $stack = Get-CFNStack -StackName $stackId
@@ -121,7 +121,7 @@ function ProcessInput([string]$instanceType,[string]$keyPair)
         "CloudFormation Stack was not successfully created, view the stack events for further information on the failure"
         Exit
     }
-#>
+
 
     $clusterName = "pollster"
     $loadBalancerRole = "ecsServiceRole"
