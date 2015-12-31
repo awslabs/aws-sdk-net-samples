@@ -42,15 +42,6 @@
 		<string>Icon-Small-40@2x.png</string>
 		<string>Icon-Small.png</string>
 	</array>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb809434219126221</string>
-			</array>
-		</dict>
-	</array>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
