@@ -67,12 +67,11 @@ namespace TODOListPortableLibrary
         {
             List<Task> tasks = new List<Task>();
             Dataset dataset = SyncManagerInstance.OpenOrCreateDataset(TASK_DATASET);
-            var records = dataset.Records;
+            var records = dataset.ActiveRecords;
             foreach (var record in records)
             {
                 tasks.Add(JsonConvert.DeserializeObject<Task>(record.Value));
             }
-
             return tasks;
         }
 
