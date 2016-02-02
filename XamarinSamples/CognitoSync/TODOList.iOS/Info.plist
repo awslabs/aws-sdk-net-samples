@@ -28,7 +28,8 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fbYourFbAppId</string>
-			</array>
+                <string>fbauth2</string>
+		    </array>
 		</dict>
 	</array>
 	<key>CFBundleDocumentTypes</key>

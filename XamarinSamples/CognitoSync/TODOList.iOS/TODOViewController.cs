@@ -82,9 +82,12 @@ namespace TODOList.iOS
         {
             if (currentTask != null)
             {
-                context.Fetch();
+				context.Fetch();
+				NavigationController.PopViewController(true);
                 CognitoSyncUtils utils = new CognitoSyncUtils();
-                utils.DeleteTask(taskDialog.Id);
+				utils.DeleteTask(taskDialog.Id);
+				Refresh();
+				currentTask = null;
             }
         }
 
