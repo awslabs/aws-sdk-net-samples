@@ -27,7 +27,7 @@ namespace AmazonSesSample
     class Program
     {
         // Change the AWSProfileName to the profile you want to use in the App.config file.
-        // See http://aws.amazon.com/credentials  for more details.
+        // See http://docs.aws.amazon.com/AWSSdkDocsNET/latest/DeveloperGuide/net-dg-config-creds.html for more details.
         // You must also sign up for an Amazon SES account for this to work
         // See http://aws.amazon.com/ses/ for details on creating an Amazon SES account
         // This sample send a mail using SES.

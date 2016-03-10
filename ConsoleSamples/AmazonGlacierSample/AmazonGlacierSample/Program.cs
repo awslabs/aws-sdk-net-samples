@@ -30,7 +30,7 @@ namespace AmazonGlacierSample
     class Program
     {
         // Change the AWSProfileName to the profile you want to use in the App.config file.
-        // See http://aws.amazon.com/credentials  for more details.
+        // See http://docs.aws.amazon.com/AWSSdkDocsNET/latest/DeveloperGuide/net-dg-config-creds.html for more details.
         // You must also sign up for an Amazon Glacier account for this to work
         // See http://aws.amazon.com/glacier/ for details on creating an Amazon Glacier account
         // Change the vaultName and fileName fields to values that match your vaultName and fileName

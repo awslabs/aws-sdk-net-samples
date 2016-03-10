@@ -30,7 +30,7 @@ namespace S3FileSystem_Sample
     class Program
     {
         // Change the AWSProfileName to the profile you want to use in the App.config file.
-        // See http://aws.amazon.com/credentials  for more details.
+        // See http://docs.aws.amazon.com/AWSSdkDocsNET/latest/DeveloperGuide/net-dg-config-creds.html for more details.
         // You must also sign up for an Amazon S3 account for this to work
         // See http://aws.amazon.com/s3/ for details on creating an Amazon S3 account
         // Change the bucketName field to a unique name that will be created and used for the sample.
