@@ -43,6 +43,7 @@ namespace AmazonSQS_Sample
                 CreateQueueResponse createQueueResponse = sqs.CreateQueue(sqsRequest);
                 String myQueueUrl;
                 myQueueUrl = createQueueResponse.QueueUrl;
+                AmazonSQSClientclient sqs = new AmazonSQSClient(awsAccessKeyId, awsSecretAccessKey, region);
 
                 //Confirming the queue exists
                 ListQueuesRequest listQueuesRequest = new ListQueuesRequest();
