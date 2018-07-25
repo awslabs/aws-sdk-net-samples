@@ -11,6 +11,7 @@ using Xamarin.Facebook.Login;
 using System.Collections.Generic;
 using Java.Security;
 using Android.Util;
+using ContactManager;
 
 [assembly: Permission(Name = Android.Manifest.Permission.Internet)]
 [assembly: MetaData("com.facebook.sdk.ApplicationId", Value = "@string/app_id")]
@@ -28,7 +29,10 @@ namespace ContactManager.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
+            //FacebookSdk.ApplicationId should be set before LoginManager.Instance.LogInWithReadPermissions is called, otherwise 
+            //the application will crash 
+            FacebookSdk.ApplicationId = Constants.FB_APP_ID;
+            FacebookSdk.ApplicationName = Constants.FB_APP_NAME; 
             FacebookSdk.SdkInitialize(this.ApplicationContext);
 
             LoadApplication(new App());
