@@ -27,7 +27,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>My Contacts</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.amazonaws.xamarin</string>
+	<string>com.amazonaws.unity</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -53,25 +53,14 @@
 	</array>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-  <key>FacebookAppID</key>
-  <string>2094944187494039</string>
-  <key>FacebookDisplayName</key>
-  <string>AWSMOBILE</string>
-  <key>CFBundleURLTypes</key>
-  <array>
-    <dict>
-    <key>CFBundleURLSchemes</key>
-    <array>
-    <string>fb2094944187494039</string>
-    </array>
-   </dict>
-  </array>
-  <key>LSApplicationQueriesSchemes</key>
-  <array>
-    <string>fbapi</string>
-    <string>fb-messenger-api</string>
-    <string>fbautstrong</string>
-    <string>fbshareextension</string>
-  </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>        
+				<string>fb{your facebook app id}</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
