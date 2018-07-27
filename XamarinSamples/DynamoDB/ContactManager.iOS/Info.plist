@@ -11,7 +11,7 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -21,7 +21,9 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>6.0</string>
+  <!--Buding of the project will fail with error [Compiling IB documents for earlier than iOS 7 is no longer supported.] in visual studio 2017.
+  To resolve this build error, we can change this vaule from 6.0 to 7.0-->
+  <string>7.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>My Contacts</string>
 	<key>CFBundleIdentifier</key>
@@ -51,5 +53,14 @@
 	</array>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>        
+				<string>fb{your facebook app id}</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
