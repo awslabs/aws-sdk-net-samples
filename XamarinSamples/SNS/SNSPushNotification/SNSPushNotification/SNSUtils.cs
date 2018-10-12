@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Amazon.Util.Internal.PlatformServices;
 
 namespace SNSPushNotification
 {
@@ -16,7 +17,8 @@ namespace SNSPushNotification
         {
             Android,
             IOS,
-            WindowsPhone
+            WindowsPhone,  
+            FCM
         }
 
         private static AWSCredentials _credentials;
@@ -55,16 +57,39 @@ namespace SNSPushNotification
                 case Platform.IOS:
                     arn = Constants.iOSPlatformApplicationArn;
                     break;
+                case Platform.FCM:
+                    arn = Constants.FCMPlatformApplicationArn;
+                    break;
             }
 
             var response = await SnsClient.CreatePlatformEndpointAsync(new CreatePlatformEndpointRequest
                 {
                     Token = registrationId,
                     PlatformApplicationArn = arn
-                }
+                }  
             );
 
             _endpointArn = response.EndpointArn;
+            IApplicationSettings _appSetting = ServiceFactory.Instance.GetService<IApplicationSettings>();
+            string oldEndpointArn = _appSetting.GetValue("FCMEndpointArn", ApplicationSettingsMode.Local);
+            if(!string.IsNullOrWhiteSpace(oldEndpointArn))
+            {
+                if (oldEndpointArn != _endpointArn)
+                {
+                    await SnsClient.DeleteEndpointAsync(new DeleteEndpointRequest
+                    {
+                        EndpointArn = oldEndpointArn
+                    }
+                    );
+                    _appSetting.SetValue("FCMEndpointArn", _endpointArn, ApplicationSettingsMode.Local);
+                }
+            }
+            else
+            {
+                _appSetting.SetValue("FCMEndpointArn", _endpointArn, ApplicationSettingsMode.Local);
+            }
+
+           
 
         }
 
