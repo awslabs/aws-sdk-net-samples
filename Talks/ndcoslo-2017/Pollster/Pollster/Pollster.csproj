@@ -9,7 +9,7 @@
     <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="0.10.1-preview1" />
     <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.0.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.0.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.0.2" />
     <PackageReference Include="Amazon.Lambda.DynamoDBEvents" Version="1.0.1" />
@@ -36,8 +36,7 @@
   <ItemGroup>
     <EmbeddedResource Include="index.html" />
     <EmbeddedResource Include="sample-polls.json" />
-    <Content Include="wwwroot\css\site.css" />
-  </ItemGroup>
+    </ItemGroup>
   <ItemGroup>
     <None Include="state-machine.json" />
   </ItemGroup>
