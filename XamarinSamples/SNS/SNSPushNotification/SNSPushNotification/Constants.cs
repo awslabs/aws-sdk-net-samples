@@ -12,7 +12,10 @@ namespace SNSPushNotification
 
         //sns android platform arn
         public const string AndroidPlatformApplicationArn = "";
+        public const string FCMPlatformApplicationArn = "";
+         
 
+        
         //sns ios platform arn
         public const string iOSPlatformApplicationArn = "";
 
