@@ -33,7 +33,7 @@ namespace AmazonDynamoDB_Sample
         {
             Console.WriteLine();
             Console.WriteLine("Setting up DynamoDB client");
-            client = new AmazonDynamoDBClient(RegionEndpoint.USWest2);
+			client = new AmazonDynamoDBClient(RegionEndpoint.USWest2);
 
             Console.WriteLine();
             Console.WriteLine("Creating sample tables");
@@ -44,7 +44,7 @@ namespace AmazonDynamoDB_Sample
             RunDataModelSample();
 
             Console.WriteLine();
-            Console.WriteLine("Running DataModel sample");
+            Console.WriteLine("Running DocumentModel sample");
             RunDocumentModelSample();
 
             Console.WriteLine();
@@ -52,7 +52,7 @@ namespace AmazonDynamoDB_Sample
             DeleteSampleTables();
 
             Console.WriteLine();
-            Console.WriteLine("Press Enter to continue...");
+            Console.WriteLine("Press the Enter key to end the program...");
             Console.Read();
         }
     }

@@ -41,7 +41,7 @@ namespace AmazonDynamoDB_Sample
             chainStore2["State"] = "NY";
             table.PutItem(chainStore2);
 
-            Console.WriteLine("Creating and saving first item");
+            Console.WriteLine("Creating and saving second item");
             Document chainStore13 = new Document();
             chainStore13["Name"] = "Big Sales Inc";
             chainStore13["Id"] = 13;
@@ -53,7 +53,7 @@ namespace AmazonDynamoDB_Sample
             chainStore13["State"] = "IL";
             table.PutItem(chainStore13);
 
-            Console.WriteLine("Creating and saving second item");
+            Console.WriteLine("Creating and saving third item");
             Document tinyDiner = new Document();
             tinyDiner["Name"] = "Tiny Map-themed Diner";
             tinyDiner["Id"] = 0;
@@ -64,7 +64,7 @@ namespace AmazonDynamoDB_Sample
             table.PutItem(tinyDiner);
 
 
-            Console.WriteLine("Creating and saving third item");
+            Console.WriteLine("Creating and saving fourth item");
             Document internetStore = new Document();
             internetStore["Name"] = "Best Online Store Ever";
             internetStore["Id"] = 0;
@@ -75,8 +75,16 @@ namespace AmazonDynamoDB_Sample
             internetStore["Phone"] = "425-555-1234";
             table.PutItem(internetStore);
 
+			Search scan;
+			ScanFilter scanFilter;
+			Console.WriteLine();
+			Console.WriteLine("Scanning for items (no filter) to get count");
+			scanFilter = new ScanFilter();
+			scan = table.Scan(scanFilter);
+			Console.WriteLine("Number of items returned (should be 4): " + scan.Count);
+			Console.WriteLine();
 
-            Console.WriteLine("Loading item");
+			Console.WriteLine("Loading item");
             Document doc1 = table.GetItem("Big Sales Inc", 2);
             Console.WriteLine("Attribute counts match (should be true): " +
                 (chainStore2.GetAttributeNames().Count == doc1.GetAttributeNames().Count));
@@ -103,7 +111,6 @@ namespace AmazonDynamoDB_Sample
             Console.WriteLine("Returned document == null (should be true): " + (doc3 == null));
 
 
-
             Search query;
             Console.WriteLine();
             Console.WriteLine("Querying for items (Equals)");
@@ -126,8 +133,9 @@ namespace AmazonDynamoDB_Sample
             while (!query.IsDone)
             {
                 Console.WriteLine("Retrieving next set (page) of items");
-                List<Document> querySet = query.GetNextSet();
-                Console.WriteLine("Number of items returned in set (should be 1, unless last set, which will be 0): " + querySet.Count);
+				List<Document> querySet = query.GetNextSet();
+				Console.WriteLine("More items (Should be true until last set): " + !query.IsDone);
+				Console.WriteLine("Number of items returned in set (should be 1 (will be 0 for final set - no more to get): " + querySet.Count);
 
                 foreach (Document doc in querySet)
                 {
@@ -141,10 +149,6 @@ namespace AmazonDynamoDB_Sample
             }
             Console.WriteLine("Total items found (should be 2): " + totalItems);
 
-
-
-            Search scan;
-            ScanFilter scanFilter;
 
             Console.WriteLine();
             Console.WriteLine("Scanning for items (GreaterThan)");
